@@ -359,8 +359,8 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
   && python -m pip install --no-cache-dir --upgrade pip \
   && python -m pip install --no-cache-dir numpy==1.21.4 \
   && python -m pip install --no-cache-dir tflite_runtime==2.7.0 \
-  && python -m pip install --no-cache-dir flask \
-  && python -m pip install --no-cache-dir pillow \
+  && python -m pip install --no-cache-dir flask==3.0.3 \
+  && python -m pip install --no-cache-dir pillow==10.4.0 \
   && apt-get remove -y gcc libpq-dev \
   && apt-get autoremove -y \
   && apt-get clean \
